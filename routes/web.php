@@ -7,12 +7,16 @@ Route::get('/', function () {
     return Inertia::render('welcome');
 })->name('home');
 
-Route::get('/page', function () {
-    return Inertia::render('page');
-})->name('page');
+Route::get('page/home', function () {
+    return Inertia::render('home');
+})->name('home');
 
 Route::get('/page/collections', function () {
     return Inertia::render('collections');
+});
+
+Route::get('/page/unsplashbox', function () {
+    return Inertia::render('unsplashBox');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {

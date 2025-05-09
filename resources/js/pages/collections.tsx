@@ -1,8 +1,10 @@
-
+import { CollectionsHeader } from "@/components/ui/CollectionsHeader";
+import { Layout } from "./Layout";
+import { CollectionsPage } from "@/components/CollectionsPage";
 export default function Collections() {
     return (
         <>
-            <p>chupa</p>
+            <Layout><CollectionsPage></CollectionsPage></Layout>
         </>
     );
 }
