@@ -2,7 +2,7 @@
 type Props = {
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleKeyDown : (e : React.KeyboardEvent<HTMLInputElement>) => void;
-};
+}; 
 
 export const SearchLabel = ({onChange, handleKeyDown} : Props) => {
     return (
